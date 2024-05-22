@@ -32,6 +32,7 @@ try:
     logout_btn = driver.find_element(By.CSS_SELECTOR, logout_btn_css)
 except:
     raise Exception("User not logged in after registering.")
+
 if logout_btn.is_displayed():
     print("PASS.")
 else:
